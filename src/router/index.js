@@ -1,20 +1,81 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-
+import Homepage from './../views/Homepage.vue'
+import MedicalEquipments from './../views/MedicalEquipments.vue'
+import MedicineList from'../views/MedicineList.vue'
+import ConfirmOder from'../views/ConfirmOder.vue'
+import AddEquipments from'../views/AddEquipments.vue'
+import Addmedicine from'../views/Addmedicine.vue'
+import MedicalResponses from'../views/MedicalResponses.vue'
+import MedicineResponses from'../views/MedicineResponses.vue'
+import SuppliersForm from '../views/SuppliersForm.vue'
+import LandingPage from '../views/LandingPage.vue'
+import DashBoard from'../views/DashBoard.vue'
+import Invoice from '../views/Invoice.vue'
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: HomeView
+    name: 'LandingPage',
+    component: LandingPage,
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
+    path: '/invoice',
+    name: 'Invoice',
+    component:Invoice,
+
+  },
+  {
+    path: '/dashBoard',
+    name: 'DashBoard',
+    component: DashBoard,
+  },
+  {
+    path: '/medicalequipments',
+    name: 'MedicalEquipments',
+    component: MedicalEquipments,
+  },
+  {
+    path: '/medicinelist',
+    name: 'MedicineList',
+    component: MedicineList,
+  },
+  {
+    path: '/confirmOder',
+    name: 'ConfirmOder',
+    component:ConfirmOder,
+  },
+  {
+    path: '/addequipments',
+    name: 'AddEquipments',
+    component:AddEquipments,
+  },
+  {
+    path: '/addmedicine',
+    name: 'Addmedicine',
+    component:Addmedicine,
+  },
+  
+  {
+    path: '/medicineResponses',
+    name: 'MedicineResponses',
+    component:MedicineResponses,
+  },
+  {
+    path: '/MedicalResponses',
+    name: 'MedicalResponses',
+    component:MedicalResponses,
+  },
+  {
+    path: '/suppliersForm',
+    name: 'SuppliersForm',
+    component:SuppliersForm,
+  },
+ 
+  
+ 
+ 
+ 
+ 
+ 
 ]
 
 const router = createRouter({
